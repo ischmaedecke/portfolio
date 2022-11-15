@@ -1,8 +1,10 @@
 ---
 layout: work
-title: "Work Entry two"
+title: "Work Number TWO"
 order: 1
 preview: 1.jpg
+summary: This is my summary.
+description: This is a museum project.
 ---
 
 ## Easier text markup

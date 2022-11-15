@@ -2,16 +2,20 @@
 layout: default
 ---
 
-<header id="top"{% if page.featured %} class="featured" {% endif %}>
+<nav>{% include nav.html %}</nav>
+
+<header id="top"{% if page.featured %} class="featured" {% endif %}>	
 	<h1>{{ page.title }}</h1>
+	<p>{{page.description}}</p>
 </header>
-{% include nav.html %}
+
 <main>
 	{% if page.summary %}
 		<h2>{{ page.summary }}</h2>
 	{% endif %}
 	{{ content }}
 	{% include gallery.html %}
+	<!-- here is the gallery!!!! -->
 </main>
 <footer>
 	<a href="#top">Top</a>

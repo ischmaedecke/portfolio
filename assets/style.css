@@ -6,7 +6,7 @@
 	--font-size--heading: calc(2 * var(--font-size));
 	--font-size--subheading: calc(1.5 * var(--font-size));
 
-	--font-size--desktop: 18px;
+	--font-size--desktop: 16px;
 
 }
 
@@ -18,7 +18,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Sono', sans-serif;
 	font-size: var(--font-size);
 	padding: var(--gutter);
 
@@ -27,9 +27,16 @@ body {
 	gap: var(--gutter);
 }
 
+a {
+	color:darkgoldenrod;
+}
 
 h1 {
 	font-size: var(--font-size--heading);
+}
+
+h2 {
+	font-size: var(--font-size--subheading);
 }
 
 .grid {
@@ -40,4 +47,35 @@ h1 {
 
 .grid img {
 	max-height: 70vh;
+}
+
+nav {
+	/* background-color: aqua; */
+	display: flex;
+	flex-direction: column;
+	gap: calc(0.5*var(--gutter));
+	justify-content: left;
+	margin-bottom: var(--gutter);
+}
+
+main img {
+	max-height: 50vh;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gutter);
+}
+
+.gallery { 
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--gutter);
+}
+
+.gallery figure {
+	grid-column: var(--span, span 1);
 }

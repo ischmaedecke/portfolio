@@ -1,8 +1,9 @@
 ---
 layout: work
-title: "Work Entry Version two"
+title: "First Work"
 order: 0
 preview: 2.jpeg
+description: This is the first work I've ever done in my life.
 gallery:
   - file: 1.jpg
     title: Example 1
